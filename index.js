@@ -43,13 +43,29 @@ function displayMovies() {
 
 function setUpArrows() {
 
-    document.querySelector('.left-arrow').addEventListener('click', (e) => {
+    let leftArrow = document.querySelector('.left-arrow');
+
+    let rightArrow = document.querySelector('.right-arrow');
+
+    leftArrow.addEventListener('click', (e) => {
         index -= 1;
+        if (index === 0) {
+            leftArrow.classList.add('hidden');
+        }
+        if (index < 5) {
+            rightArrow.classList.remove('hidden');
+        }
         displayMovies();
     })
 
-    document.querySelector('.right-arrow').addEventListener('click', (e) => {
+    rightArrow.addEventListener('click', (e) => {
         index += 1;
+        if (index > 4) {
+            rightArrow.classList.add('hidden');
+        }
+        if (index > 0) {
+            leftArrow.classList.remove('hidden');
+        }
         displayMovies();
     })
 

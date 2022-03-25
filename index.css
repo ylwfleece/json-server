@@ -28,10 +28,14 @@
 .movie-carousel__card {
     height: 90%;
     width: 190px;
-    
+
 }
 
 .movie-carousel__card__img {
     height: 70%;
     width: 90%;
+}
+
+.hidden {
+    display: none;
 }
