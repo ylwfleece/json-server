@@ -1,0 +1,43 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.display-container {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin-left: 20%;
+    background-color: green;
+}
+
+.left-arrow, .right-arrow {
+    width: 8%;
+}
+
+.left-arrow {
+
+}
+
+.right-arrow {
+
+}
+
+.moviecarousel {
+    width: 84%;
+    display: flex;
+    flex-direction: row;
+}
+
+.movie-card {
+
+}
+
+.movie-card__img {
+
+}
+
+.movie-card__details {
+
+}
